@@ -22,7 +22,7 @@ const About = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="h-[640px] flex-1 bg-about bg-contain bg-top bg-no-repeat mix-blend-lighten"
+            className=" min-h-[400px] flex-1 bg-about bg-contain bg-top bg-no-repeat mix-blend-lighten md:h-[640px]"
           ></motion.div>
           {/* text */}
           <motion.div
@@ -43,7 +43,7 @@ const About = () => {
             {/* stats */}
             <div className="mb-12 flex gap-x-6 lg:gap-x-10">
               <article>
-                <div className="text-gradient mb-2 font-tertiary text-[40px]">
+                <div className="text-gradient mb-2 font-tertiary text-[30px] lg:text-[40px]">
                   {InView ? <CountUp start={0} end={13} duration={3} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
@@ -51,7 +51,7 @@ const About = () => {
                 </div>
               </article>
               <article>
-                <div className="text-gradient mb-2 font-tertiary text-[40px]">
+                <div className="text-gradient mb-2 font-tertiary text-[30px] lg:text-[40px]">
                   {InView ? <CountUp start={0} end={15} duration={3} /> : null}
                   k+
                 </div>
@@ -60,7 +60,7 @@ const About = () => {
                 </div>
               </article>
               <article>
-                <div className="text-gradient mb-2 font-tertiary text-[40px]">
+                <div className="text-gradient mb-2 font-tertiary text-[30px] lg:text-[40px]">
                   {InView ? <CountUp start={0} end={12} duration={3} /> : null}{" "}
                   k+
                 </div>
